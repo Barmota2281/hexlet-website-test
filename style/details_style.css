@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --mulish-font: "Mulish", sans-serif;
+    --inter-font: "Inter", sans-serif;
+    --tt_travels-font: "TT Travels", sans-serif;
+    --container-width: 1160px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+    font-family: var(--mulish-font);
+    font-weight: 500;
+    font-size: 20px;
+}
+
+/* Базовые классы */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+.text_purple {
+    color: #7f61dd;
+}
+.text_pink {
+    color: #e44a77;
+}
+.text_extrabold {
+    font-weight: 800;
+}
+
+/* Что мы предлагаем section*/
+.section__what-we-offer {
+    background-color: #7F61DD;
+    padding: 75px 0 48px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.what-we-offer__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.what-we-offer__text {
+    width: 90%;
+}
+.what-we-offer__title {
+    font-family: var(--mulish-font);
+    font-weight: 800;
+    font-size: 64px;
+    color: #A8EB66;
+    margin-bottom: 0;
+}
+.what-we-offer__text {
+    font-family: var(--mulish-font);
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 13px;
+}
+
+.what-we-offer__column_right {
+    position: relative;
+}
+.what-we-offer__alert {
+    width: 147px;
+    height: 77px;
+    position: absolute;
+    z-index: 100;
+    bottom: 54px;
+    right: -58px;
+}
+
+/* Главная часть страницы */
+.container_main {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 42px 0 22px;
+}
+
+/* Детали об курсе */
+section.course__plan-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Отступы между секциями */
+section#course-details-section {
+    margin-bottom: 130px;
+}
+section#course__plan-section,
+section#course__perspective-section {
+    margin-bottom: 104px;
+    /* column-gap: 75px; */
+}
+
+section.course__plan-details .course__details-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+section.course__plan-details .course__details-header p {
+    margin-top: 13px;
+    width: 650px;
+}
+
+section.course__plan-details .course__details-header h2 {
+    font-family: var(--mulish-font);
+    font-size: 48px;
+    font-weight: 800;
+}
+
+/* Нижние отсутупы титулов деталей курсов */
+section#course-details-section .course__details-header {
+    margin-bottom: 46px;
+}
+section#course__plan-section .course__details-header {
+    margin-bottom: 40px;
+}
+section#course__perspective-section .course__details-header {
+    margin-bottom: 32px;
+}
+
+
+/* Титул колонки(больше обычного) */
+h2.column__title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 32px;
+}
+
+/* Титул колонки(не используется) */
+h3.column__title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* Удаляем базовые точки списков */
+section.course__plan-details ul.course__details {
+    list-style-type: none;
+}
+
+section.course__plan-details ul.course__details.details__arrowed li {
+    position: relative;
+    width: max-content;
+    font-size: 20px;
+    padding-left: 25px;
+    margin-bottom: 25px;
+}
+/* Увеличенные отступы между пунктами у правой колонки */
+section.course__plan-details .course__column_right ul.course__details.details__arrowed li {
+    margin-bottom: 35px;
+}
+
+/* Фиолетовые стрелки перед пунктами */
+section.course__plan-details ul.course__details.details__arrowed li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 30px;
+    background-image: url('../svg/purple__arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Фиолетовый дефис перед пунктами */
+section.course__plan-details ul.course__details.course__details_hyphenated li {
+    position: relative;
+    padding-left: 12px;
+    margin-bottom: 10px;
+}
+section.course__plan-details ul.course__details.course__details_hyphenated  li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-55%);
+    color: #7f61dd;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.course__details-header,
+.layout__side {
+    position: relative;
+}
+
+/* План курсов через <p> */
+section.course__plan-details .course__column_left .course__details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* Размеры фотографии */
+.what-we-offer__image {
+    width: 364px;
+    height: 347px;
+}
+.course__image_info-sm {
+    position: absolute;
+    top: -130px;
+    right: 0;
+    width: 333px;
+}
+
+/* Зеленая кнопка "Хочу записаться" */
+.green_button {
+    width: 382px;
+    height: 72px;
+    font-family: var(--mulish-font);
+    font-size: 30px;
+    font-weight: 800;
+    background-color: #A8EB66;
+    color: #fff;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.green_button:hover {
+    color: #e44a77;
+}
+
+/* Подвал */
+.text_underline--gray {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.8);
+    text-underline-offset: 2px;
+}
+
+.footer {
+    padding-top: 28px;
+    background-color: #000;
+    padding-bottom: 48px;
+}
+
+.footer__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer__title {
+    font-family: var(--mulish-font);
+    font-weight: 800;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 18px;
+}
+
+.footer__link {
+    font-family: var(--mulish-font);
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: 0.3s linear;
+}
+
+.footer__link:hover, .footer__phone:hover, .footer__copyright-political:hover{
+    color: #e44a77;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 12px;
+}
+
+.footer__social-link {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer__phone {
+    font-family: var(--mulish-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+    margin-top: 12px;
+    text-decoration:none;
+    transition: 0.3s linear;
+}
+
+.footer__button {
+    border-radius: 15px;
+    width: 274px;
+    height: 55px;
+    background: #e44a77;
+    text-decoration: none;
+    font-family: var(--mulish-font);
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23px;
+    cursor: pointer;
+    border: none;
+    transition: 0.1s linear;
+}
+
+.footer__button:hover{
+    background: #fff;
+    color: #e44a77;
+    border: #e44a77 solid 1px;
+}
+.footer__section-contacts .footer__title {
+    margin-bottom: 22px;
+}
+
+.footer__sections {
+    display: flex;
+    width: 475px;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.48);
+    padding-top: 32px;
+    margin-top: 41px;
+}
+.footer__copyright-image {
+    width: 260px;
+}
+
+.copyright__main-text {
+    font-family: var(--mulish-font);
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: 0.8;
+    color: #fff;
+    width: 410px;
+    margin-bottom: 15px;
+}
+
+.copyright__main-text a{
+    color: #fff;
+}
+
+.footer__copyright-political {
+    text-decoration: none;
+    width: 274px;
+    font-family: var(--mulish-font);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #fff;
+    transition: 0.1s linear;
+}
+
+/* Адаптация для футера */
+@media screen and (max-width: 800px){
+    .footer {
+        padding-bottom: 75px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .footer__sections{
+        display: block;
+    }
+
+    .footer__section-about{
+        margin-left: 0;
+        margin-top: 41px;
+    }
+
+    .footer__section-contacts{
+        margin-top: 242px;
+    }
+}
+
+
+/* Адаптация для страницы */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    /* Отступы между колонками */
+    section.course__plan-details {
+        justify-content: space-between;
+        column-gap: 0;
+    }
+    section#course-details-section {
+        width: 80%;
+        column-gap: 100px;
+        align-items: flex-end;
+    }
+
+    section#course__plan-section {
+        column-gap: 75px;
+    }
+    section#course__perspective-section {
+        column-gap: 50px;
+    }
+
+    section.course__plan-details .course__details-header {
+        margin-bottom: 25px;
+    }
+    section.course__plan-details ul.course__details.course__details_hyphenated li {
+        margin-bottom: 5px;
+    }
+
+    .course__image_programming {
+        position: relative;
+        bottom: 15px;
+        width: 375px;
+    }
+    .course__image_computer-science {
+        width: 300px;
+    }
+    .course__image_info-sm {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    section#course-details-section {
+        width: 100%;
+        column-gap: 1px;
+        align-items: flex-end
+    }
+    /* Отступы между колонками */
+    section.course__plan-details {
+        justify-content: space-between;
+        column-gap: 0;
+    }
+
+    section#course__plan-section {
+        column-gap: 75px;
+    }
+    section#course__perspective-section {
+        column-gap: 50px;
+    }
+
+    section.course__plan-details .course__details-header {
+        margin-bottom: 25px;
+    }
+    section.course__plan-details ul.course__details.course__details_hyphenated li {
+        margin-bottom: 5px;
+    }
+
+    .course__image_programming {
+        position: relative;
+        bottom: 15px;
+        width: 325px;
+    }
+    section#course__perspective-section {
+        column-gap: 0;
+    }
+    .course__image_computer-science {
+        width: 300px;
+    }
+    .course__image_info-sm {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container_main {
+        margin: 0 auto;
+        max-width: var(--container-width);
+        padding: 40px 40px 100px 40px;
+    }
+    /* Отступы между колонками */
+    section#course-details-section {
+        width: 100%;
+        column-gap: 1px;
+        align-items: flex-end;
+    }
+    section.course__plan-details {
+        justify-content: space-between;
+        column-gap: 0;
+    }
+
+    section.course__plan-details .course__details-header {
+        margin-bottom: 25px;
+    }
+    section.course__plan-details ul.course__details.course__details_hyphenated li {
+        margin-bottom: 5px;
+    }
+
+    section.course__plan-details .course__column_left .course__details-container {
+        gap: 12px;
+    }
+
+    .course__image_programming {
+        display: none;
+    }
+    .course__image_computer-science {
+        display: none;
+    }
+    .course__image_info-sm {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container_main {
+        margin: 0 auto;
+        width: 90%;
+        padding: 40px 0 100px;
+    }
+
+    /* Размер шрита заголовков */
+    section.course__plan-details .course__details-header h2 {
+        font-size: 24px;
+    }
+    section.course__plan-details .course__details-header p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Размер описания для p */
+    .course__details-container p {
+        font-size: 14px;
+    }
+
+    /* Размер шрифтов для пунктов li */
+    .course__details-clause li {
+        font-size: 14px;
+    }
+
+
+    section.course__plan-details .course__details-header {
+        margin-bottom: 20px;
+    }
+    section.course__plan-details ul.course__details.course__details_hyphenated li {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    section.course__plan-details .course__column_left .course__details-container {
+        gap: 8px;
+    }
+
+    .course__image_info-sm {
+        display: none;
+    }
+    .course__image_programming {
+        display: none;
+    }
+    .course__image_computer-science {
+        display: none;
+    }
+    .course__image_info-sm {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .course__image_info-sm {
+        display: none;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "project_hexlet",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "motion": "^11.17.0",
+    "parcel": "^2.13.3"
+  }
+}

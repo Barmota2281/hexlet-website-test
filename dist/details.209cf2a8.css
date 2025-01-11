@@ -1,0 +1,564 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap";
+:root {
+  --mulish-font: "Mulish", sans-serif;
+  --inter-font: "Inter", sans-serif;
+  --tt_travels-font: "TT Travels", sans-serif;
+  --container-width: 1160px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--mulish-font);
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.text_purple {
+  color: #7f61dd;
+}
+
+.text_pink {
+  color: #e44a77;
+}
+
+.text_extrabold {
+  font-weight: 800;
+}
+
+.section__what-we-offer {
+  color: #fff;
+  z-index: 1;
+  background-color: #7f61dd;
+  padding: 75px 0 48px;
+  position: relative;
+}
+
+.what-we-offer__wrapper {
+  justify-content: space-between;
+  display: flex;
+}
+
+.what-we-offer__text {
+  width: 90%;
+}
+
+.what-we-offer__title {
+  font-family: var(--mulish-font);
+  color: #a8eb66;
+  margin-bottom: 0;
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.what-we-offer__text {
+  font-family: var(--mulish-font);
+  color: #fff;
+  margin-top: 13px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.what-we-offer__column_right {
+  position: relative;
+}
+
+.what-we-offer__alert {
+  z-index: 100;
+  width: 147px;
+  height: 77px;
+  position: absolute;
+  bottom: 54px;
+  right: -58px;
+}
+
+.container_main {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 42px 0 22px;
+}
+
+section.course__plan-details {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+}
+
+section#course-details-section {
+  margin-bottom: 130px;
+}
+
+section#course__plan-section, section#course__perspective-section {
+  margin-bottom: 104px;
+}
+
+section.course__plan-details .course__details-header {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+section.course__plan-details .course__details-header p {
+  width: 650px;
+  margin-top: 13px;
+}
+
+section.course__plan-details .course__details-header h2 {
+  font-family: var(--mulish-font);
+  font-size: 48px;
+  font-weight: 800;
+}
+
+section#course-details-section .course__details-header {
+  margin-bottom: 46px;
+}
+
+section#course__plan-section .course__details-header {
+  margin-bottom: 40px;
+}
+
+section#course__perspective-section .course__details-header {
+  margin-bottom: 32px;
+}
+
+h2.column__title {
+  margin-bottom: 32px;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+h3.column__title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+section.course__plan-details ul.course__details {
+  list-style-type: none;
+}
+
+section.course__plan-details ul.course__details.details__arrowed li {
+  width: max-content;
+  margin-bottom: 25px;
+  padding-left: 25px;
+  font-size: 20px;
+  position: relative;
+}
+
+section.course__plan-details .course__column_right ul.course__details.details__arrowed li {
+  margin-bottom: 35px;
+}
+
+section.course__plan-details ul.course__details.details__arrowed li:before {
+  content: "";
+  background-image: url("purple__arrow.59df47dc.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+section.course__plan-details ul.course__details.course__details_hyphenated li {
+  margin-bottom: 10px;
+  padding-left: 12px;
+  position: relative;
+}
+
+section.course__plan-details ul.course__details.course__details_hyphenated li:before {
+  content: "-";
+  color: #7f61dd;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-55%);
+}
+
+.course__details-header, .layout__side {
+  position: relative;
+}
+
+section.course__plan-details .course__column_left .course__details-container {
+  flex-direction: column;
+  gap: 35px;
+  display: flex;
+}
+
+.what-we-offer__image {
+  width: 364px;
+  height: 347px;
+}
+
+.course__image_info-sm {
+  width: 333px;
+  position: absolute;
+  top: -130px;
+  right: 0;
+}
+
+.green_button {
+  width: 382px;
+  height: 72px;
+  font-family: var(--mulish-font);
+  color: #fff;
+  cursor: pointer;
+  background-color: #a8eb66;
+  border: none;
+  border-radius: 11px;
+  font-size: 30px;
+  font-weight: 800;
+  transition: all .4s;
+}
+
+.green_button:hover {
+  color: #e44a77;
+}
+
+.text_underline--gray {
+  text-underline-offset: 2px;
+  text-decoration: underline #fffc;
+}
+
+.footer {
+  background-color: #000;
+  padding-top: 28px;
+  padding-bottom: 48px;
+}
+
+.footer__wrapper {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.footer__title {
+  font-family: var(--mulish-font);
+  color: #fff;
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.footer__link {
+  font-family: var(--mulish-font);
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .3s linear;
+  display: block;
+}
+
+.footer__link:hover, .footer__phone:hover, .footer__copyright-political:hover {
+  color: #e44a77;
+}
+
+.footer__contacts {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.footer__social {
+  column-gap: 12px;
+  display: flex;
+}
+
+.footer__social-link {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer__phone {
+  font-family: var(--mulish-font);
+  color: #fff;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: all .3s linear;
+}
+
+.footer__button {
+  width: 274px;
+  height: 55px;
+  font-family: var(--mulish-font);
+  color: #fff;
+  cursor: pointer;
+  background: #e44a77;
+  border: none;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23px;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all .1s linear;
+  display: flex;
+}
+
+.footer__button:hover {
+  color: #e44a77;
+  background: #fff;
+  border: 1px solid #e44a77;
+}
+
+.footer__section-contacts .footer__title {
+  margin-bottom: 22px;
+}
+
+.footer__sections {
+  justify-content: space-between;
+  width: 475px;
+  display: flex;
+}
+
+.footer__copyright {
+  border-top: 1px solid #ffffff7a;
+  justify-content: space-between;
+  margin-top: 41px;
+  padding-top: 32px;
+  display: flex;
+}
+
+.footer__copyright-image {
+  width: 260px;
+}
+
+.copyright__main-text {
+  font-family: var(--mulish-font);
+  opacity: .8;
+  color: #fff;
+  width: 410px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.copyright__main-text a {
+  color: #fff;
+}
+
+.footer__copyright-political {
+  width: 274px;
+  font-family: var(--mulish-font);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: all .1s linear;
+}
+
+@media screen and (width <= 800px) {
+  .footer {
+    padding-bottom: 75px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .footer__sections {
+    display: block;
+  }
+
+  .footer__section-about {
+    margin-top: 41px;
+    margin-left: 0;
+  }
+
+  .footer__section-contacts {
+    margin-top: 242px;
+  }
+}
+
+@media screen and (width >= 1025px) and (width <= 1280px) {
+  section.course__plan-details {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  section#course-details-section {
+    align-items: flex-end;
+    column-gap: 100px;
+    width: 80%;
+  }
+
+  section#course__plan-section {
+    column-gap: 75px;
+  }
+
+  section#course__perspective-section {
+    column-gap: 50px;
+  }
+
+  section.course__plan-details .course__details-header {
+    margin-bottom: 25px;
+  }
+
+  section.course__plan-details ul.course__details.course__details_hyphenated li {
+    margin-bottom: 5px;
+  }
+
+  .course__image_programming {
+    width: 375px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  .course__image_computer-science {
+    width: 300px;
+  }
+
+  .course__image_info-sm {
+    width: 200px;
+  }
+}
+
+@media screen and (width >= 769px) and (width <= 1024px) {
+  section#course-details-section {
+    align-items: flex-end;
+    column-gap: 1px;
+    width: 100%;
+  }
+
+  section.course__plan-details {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  section#course__plan-section {
+    column-gap: 75px;
+  }
+
+  section.course__plan-details .course__details-header {
+    margin-bottom: 25px;
+  }
+
+  section.course__plan-details ul.course__details.course__details_hyphenated li {
+    margin-bottom: 5px;
+  }
+
+  .course__image_programming {
+    width: 325px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  section#course__perspective-section {
+    column-gap: 0;
+  }
+
+  .course__image_computer-science {
+    width: 300px;
+  }
+
+  .course__image_info-sm {
+    width: 200px;
+  }
+}
+
+@media screen and (width >= 481px) and (width <= 768px) {
+  .container_main {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 40px 40px 100px;
+  }
+
+  section#course-details-section {
+    align-items: flex-end;
+    column-gap: 1px;
+    width: 100%;
+  }
+
+  section.course__plan-details {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  section.course__plan-details .course__details-header {
+    margin-bottom: 25px;
+  }
+
+  section.course__plan-details ul.course__details.course__details_hyphenated li {
+    margin-bottom: 5px;
+  }
+
+  section.course__plan-details .course__column_left .course__details-container {
+    gap: 12px;
+  }
+
+  .course__image_programming, .course__image_computer-science {
+    display: none;
+  }
+
+  .course__image_info-sm {
+    width: 200px;
+  }
+}
+
+@media screen and (width <= 480px) {
+  .container_main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 0 100px;
+  }
+
+  section.course__plan-details .course__details-header h2 {
+    font-size: 24px;
+  }
+
+  section.course__plan-details .course__details-header p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .course__details-container p, .course__details-clause li {
+    font-size: 14px;
+  }
+
+  section.course__plan-details .course__details-header {
+    margin-bottom: 20px;
+  }
+
+  section.course__plan-details ul.course__details.course__details_hyphenated li {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  section.course__plan-details .course__column_left .course__details-container {
+    gap: 8px;
+  }
+
+  .course__image_info-sm, .course__image_programming, .course__image_computer-science, .course__image_info-sm {
+    display: none;
+  }
+}
+
+@media screen and (width <= 700px) {
+  .course__image_info-sm {
+    display: none;
+  }
+}
+/*# sourceMappingURL=details.209cf2a8.css.map */

@@ -1,0 +1,145 @@
+body.modal--opened {
+    overflow: hidden;
+    position: sticky;
+    width: 100vw;
+}
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Фиксированное позиционирование */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Поверх остального контента */
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4); /* Полупрозрачный фон */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.modal__content {
+    width: 30%;
+    max-width: 530px;
+    height: 460px;
+    padding: 32px 39px;
+    background-color: #e44a77;
+    border-radius: 30px;
+    position: relative;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.modal.modal--show {
+    opacity: 1;
+}
+.modal.modal--show .modal__content {
+    transform: scale(1);
+    opacity: 1;
+}
+.modal__filling {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+.modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    line-height: 48px;
+}
+.modal__header h2 {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 32px;
+    margin: 0;
+    color: rgba(255, 255, 255, 1);
+}
+.filling__input-up {
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-family: var(--font-family);
+    padding-left: 24px;
+    font-weight: 600;
+    border: none;
+}
+.filling__button {
+    background-color: rgba(0, 171, 249, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 14px;
+    width: 100%;
+    min-height: 57px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    line-height: 38px;
+}
+.modal__paragraph {
+    color: rgba(255, 255, 255, 1);
+    font-family: var(--second-family);
+    margin-top: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    font-size: 12px;
+}
+.modal__links {
+    color: rgba(255, 255, 255, 1);
+}
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: black;
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+    .modal__content {
+        width: 55%;
+        height: max-content;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .modal__header h2 {
+        font-size: 24px;
+    }
+    .filling__input-up {
+        height: 40px;
+        padding-left: 24px;
+    }
+    .filling__button {
+        min-height: 45px;
+        border-radius: 12px;
+    }
+    .modal__paragraph {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 40em) {
+    .modal__content {
+        width: 90%;
+        height: max-content;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .modal__header h2 {
+        font-size: 24px;
+    }
+    .filling__input-up {
+        height: 40px;
+        padding-left: 24px;
+    }
+    .filling__button {
+        min-height: 45px;
+        border-radius: 12px;
+    }
+    .modal__paragraph {
+        font-size: 10px;
+    }
+}

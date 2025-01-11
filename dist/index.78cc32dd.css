@@ -1,0 +1,2411 @@
+:root {
+  --font-family: "Mulish", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --third-family: "TT Travels", sans-serif;
+}
+
+@keyframes first_show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-family);
+  outline: solid #92da63;
+  font-size: 18px;
+  font-weight: 500;
+  animation: .5s linear first_show;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.visible-mobile {
+  display: none;
+}
+
+.courses {
+  z-index: 1;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.coursesall__text {
+  padding-top: 50px;
+}
+
+.courseall__text-title {
+  font-family: var(--font-family);
+  color: #7f61dd;
+  width: 421px;
+  min-height: 126px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.courseall__text-p {
+  max-width: 481px;
+  font-family: var(--font-family);
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.coursesall__block {
+  padding-top: 59px;
+  position: relative;
+}
+
+.coursesall__block-button {
+  width: 377px;
+  height: 72px;
+  font-family: var(--font-family);
+  color: #000;
+  cursor: pointer;
+  background-color: #a8eb66;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all .4s;
+  display: flex;
+}
+
+.coursesall__block-button:hover {
+  color: #e44a77;
+}
+
+.block_section-courses {
+  background-color: #fff;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
+.block1_section-courses {
+  transform-origin: center;
+  top: 115px;
+  left: -16px;
+  transform: rotateZ(225deg);
+}
+
+.block2_section-courses {
+  transform-origin: center;
+  bottom: 56px;
+  left: 362px;
+  transform: rotateZ(226deg);
+}
+
+.coursesall {
+  gap: 284px;
+  display: flex;
+}
+
+.coursesall__img {
+  padding-top: 50px;
+  position: relative;
+}
+
+.coursesall__img :last-child {
+  position: absolute;
+  bottom: 54px;
+  left: 275px;
+}
+
+.sitebuilding {
+  padding-top: 107px;
+}
+
+.sitebuilding-title {
+  font-family: var(--font-family);
+  color: #000;
+  padding-bottom: 30px;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.sitebuild-word {
+  color: #7f61dd;
+}
+
+.sitebuilding-text {
+  max-width: 985px;
+  font-family: var(--font-family);
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.sitebuilding__container :last-child {
+  margin-top: 25px;
+}
+
+.sitebuilding-word {
+  color: #7f61dd;
+}
+
+.alldetails {
+  padding-top: 82px;
+}
+
+.details_up {
+  gap: 78px;
+  max-width: 1204px;
+  display: flex;
+}
+
+.details_down {
+  gap: 100px;
+  max-width: 1204px;
+  padding-top: 26px;
+  display: flex;
+}
+
+.details__teachers {
+  gap: 12px;
+  width: 565px;
+  display: flex;
+}
+
+.details__teachers > img {
+  padding: 0 0 80px;
+}
+
+.details__teachers-about {
+  font-family: var(--font-family);
+  color: #000;
+  width: 519px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.red__teacher-word {
+  color: #e44a77;
+  font-weight: 800;
+}
+
+.details__projects {
+  gap: 12px;
+  width: 518px;
+  display: flex;
+}
+
+.details__projects-about {
+  font-family: var(--font-family);
+  color: #000;
+  width: 481px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.blue__project-word {
+  color: #0af;
+  font-weight: 800;
+}
+
+.details__projects > img {
+  padding: 0 0 80px;
+}
+
+.details__grafic {
+  gap: 12px;
+  width: 565px;
+  display: flex;
+}
+
+.details__grafic > img {
+  padding: 0 0 80px;
+}
+
+.details__grafic-about {
+  font-family: var(--font-family);
+  color: #000;
+  width: 497px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.green__grafic-word {
+  color: #92da63;
+  font-weight: 800;
+}
+
+.details__sertify {
+  gap: 12px;
+  width: 565px;
+  display: flex;
+}
+
+.details__sertify > img {
+  padding: 0 0 80px;
+}
+
+.details__sertify-about {
+  font-family: var(--font-family);
+  color: #000;
+  max-width: 486px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.purple__sertify-word {
+  color: #7f61dd;
+  font-weight: 800;
+}
+
+.consultation {
+  background-color: #e44a77;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.consultation__form {
+  flex-direction: column;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  display: flex;
+}
+
+.consultation__form > h2 {
+  font-family: var(--second-family);
+  color: #fff;
+  padding-bottom: 10px;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.consultation__form-solovey {
+  flex-direction: column;
+  gap: 15px;
+  display: flex;
+}
+
+.consultation__form-solovey > input {
+  width: 565px;
+  height: 55px;
+  font-family: var(--font-family);
+  color: #7f7f7f;
+  border: none;
+  border-radius: 14px;
+  padding-left: 26px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.consultation__form-solovey > button {
+  width: 565px;
+  height: 55px;
+  font-family: var(--font-family);
+  color: #fff;
+  cursor: pointer;
+  background-color: #00abf9;
+  border: none;
+  border-radius: 14px;
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.privacy {
+  font-family: var(--font-family);
+  color: #fff;
+  max-width: 517px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.privacy-line {
+  text-decoration-skip-ink: none;
+  text-underline-offset: 2.2px;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.consultation_ {
+  position: relative;
+}
+
+.consultation__images > :first-child {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 600px;
+}
+
+.consultation__images {
+  margin-left: 200px;
+}
+
+.designmoment {
+  z-index: 2;
+  position: absolute;
+  bottom: 460px;
+  left: 900px;
+}
+
+.consultation__images > span {
+  font-family: var(--font-family);
+  color: #fff;
+  z-index: 3;
+  width: 151px;
+  font-size: 14px;
+  font-weight: 500;
+  position: absolute;
+  top: 82px;
+  left: 930px;
+}
+
+.kodatzdes {
+  width: 203px;
+  height: 53px;
+  position: absolute;
+  top: 80px;
+  left: 520px;
+}
+
+.checkmark {
+  position: absolute;
+  overflow: hidden;
+}
+
+.checkone {
+  top: 80px;
+  left: 840px;
+}
+
+.checktwo {
+  top: 0;
+  left: 1100px;
+}
+
+.checkthree {
+  top: 150px;
+  left: 1200px;
+}
+
+.checkfour {
+  top: 360px;
+  left: 980px;
+}
+
+.checkfive {
+  top: 600px;
+  left: 1000px;
+}
+
+.checksix {
+  top: 530px;
+  left: 1150px;
+}
+
+.checkseven {
+  top: 93%;
+  left: 1200px;
+}
+
+.checkacht {
+  top: 50%;
+  left: 640px;
+}
+
+.checknein {
+  top: 430px;
+  left: 1310px;
+}
+
+.checkoneone {
+  top: 310px;
+  left: 1150px;
+}
+
+.checkonetwo {
+  top: 462px;
+  left: 990px;
+}
+
+.checkonethree {
+  top: 480px;
+  left: 1230px;
+}
+
+.checkonefour {
+  top: 246px;
+  left: 1050px;
+}
+
+.check15 {
+  top: 25px;
+  left: 1265px;
+  rotate: 180deg;
+}
+
+.check16 {
+  top: 666px;
+  left: 1056px;
+  rotate: 180deg;
+}
+
+.check17 {
+  top: 7px;
+  left: 918px;
+  rotate: 180deg;
+}
+
+.check18 {
+  top: 418px;
+  left: 1088px;
+  rotate: 180deg;
+}
+
+.check19 {
+  top: 259px;
+  left: 859px;
+  rotate: 180deg;
+}
+
+.check20 {
+  top: 230px;
+  left: 1320px;
+  rotate: 180deg;
+}
+
+.check21 {
+  top: -9px;
+  left: 1361px;
+  rotate: 180deg;
+}
+
+.check22 {
+  top: 562px;
+  left: 1282px;
+  rotate: 180deg;
+}
+
+.check23 {
+  top: 194px;
+  left: 943px;
+  rotate: 180deg;
+}
+
+.check24 {
+  top: 514px;
+  left: 1384px;
+  rotate: 180deg;
+}
+
+.check25 {
+  top: 95px;
+  left: 1345px;
+  rotate: 180deg;
+}
+
+.check26 {
+  top: 365px;
+  left: 1246px;
+  rotate: 180deg;
+}
+
+.check27 {
+  top: 377px;
+  left: 1397px;
+  rotate: 180deg;
+}
+
+.demand-specialists__title {
+  font-family: var(--font-family);
+  color: #000;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 50.2px;
+}
+
+.demand-specialists__about {
+  max-width: 851px;
+  padding-top: 48px;
+}
+
+.demand-specialists__about > h2 {
+  padding-bottom: 5px;
+}
+
+.demand-specialists__about > p {
+  padding-bottom: 49px;
+}
+
+.demand-specialists__description {
+  font-family: var(--font-family);
+  color: #000;
+  width: 553px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.presentation-cards {
+  justify-content: center;
+  gap: 35px;
+  display: flex;
+}
+
+.presentation-card__image {
+  z-index: 1;
+  border-radius: 20px;
+  width: 570px;
+  height: 450px;
+  transition: all 1s;
+  position: absolute;
+  overflow: hidden;
+}
+
+.presentation-card__conditions {
+  gap: 10px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.presentation-card__content {
+  z-index: 3;
+  margin-left: 30px;
+  position: relative;
+}
+
+.presentation-card__title {
+  font-family: var(--second-family);
+  color: #fff;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.presentation-card__languages {
+  gap: 10px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.presentation-card__html {
+  color: #000;
+  width: 60.18px;
+  height: 26.85px;
+  font-family: var(--second-family);
+  background-color: #92da63;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+  display: flex;
+}
+
+.presentation-card__css {
+  color: #fff;
+  width: 50.18px;
+  height: 26.85px;
+  font-family: var(--second-family);
+  background-color: #7f61dd;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+  display: flex;
+}
+
+.presentation-card__age {
+  width: 92px;
+  height: 28px;
+  font-size: 16px;
+  font-family: var(--third-family);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 13px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+}
+
+.presentation-card__time {
+  width: 101px;
+  height: 28px;
+  font-size: 16px;
+  font-family: var(--third-family);
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 13px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+}
+
+.presentation-card__about {
+  font-family: var(--font-family);
+  color: #fff;
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.presentation-card {
+  color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  width: 570px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+}
+
+.presentation-card:after {
+  content: "";
+  z-index: 2;
+  background: none;
+  border-radius: 20px;
+  width: 570px;
+  height: 450px;
+  transition: background .3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.presentation-card__c {
+  color: #000;
+  width: 50.18px;
+  height: 26.85px;
+  font-family: var(--second-family);
+  background-color: #92da63;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.15px;
+  display: flex;
+}
+
+section.about_courses {
+  text-align: center;
+  flex-flow: column wrap;
+  row-gap: 34px;
+  padding-top: 34px;
+  display: flex;
+}
+
+section.about_courses .courses__header {
+  font-size: 32px;
+}
+
+.container .courses__header {
+  display: none;
+}
+
+.courses__header1 {
+  text-align: center;
+  font-size: 32px;
+}
+
+.courses__header1 > h2 {
+  padding-top: 34px;
+}
+
+.courses__list {
+  column-gap: 28px;
+  padding-top: 30px;
+  display: flex;
+}
+
+.courses__card {
+  border: 2px solid #e44a77;
+  border-radius: 38px;
+  flex-direction: column;
+  width: 350px;
+  height: 500px;
+  display: flex;
+  position: relative;
+}
+
+.courses__card-header {
+  border-bottom: 2px solid #e44a77;
+  justify-content: center;
+  padding: 20px 0;
+  display: flex;
+}
+
+.card__header-left {
+  padding: 32px 0;
+}
+
+.courses__card-header h3 {
+  font-size: 22px;
+}
+
+.courses__card-description {
+  text-align: left;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 30px 20px 40px 30px;
+  font-size: 15px;
+  display: flex;
+}
+
+.courses__card-price {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+}
+
+.courses__card-price h3 {
+  font-size: 28px;
+}
+
+.courses__card-button a {
+  width: 101%;
+  height: 70px;
+  font-family: var(--font-family);
+  color: #fff;
+  cursor: pointer;
+  background-color: #e44a77;
+  border: none;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all .1s linear;
+  display: flex;
+  position: absolute;
+  bottom: -30px;
+  right: -2px;
+}
+
+.courses__card-button a:hover {
+  color: #e44a77;
+  background: #fff;
+  border: 1px solid #e44a77;
+}
+
+.text_purple {
+  color: #7f61dd;
+}
+
+.text_pink {
+  color: #e44a77;
+}
+
+.text_extrabold {
+  font-weight: 800;
+}
+
+.enrollment {
+  background: #e44a77;
+  margin-top: 79px;
+  padding-top: 49px;
+  padding-bottom: 75px;
+  position: relative;
+  overflow: hidden;
+}
+
+.enrollment__head-title {
+  font-family: var(--font-family);
+  color: #fff;
+  margin: 0 0 4px;
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.enrollment__head-text {
+  font-family: var(--font-family);
+  color: #fff;
+  max-width: 541px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.enrollment__form {
+  align-items: center;
+  margin-top: 43px;
+  display: flex;
+}
+
+.form__input, .form__input2, .form__input3 {
+  font-family: var(--font-family);
+  color: #7f7f7f;
+  border: none;
+  border-radius: 11px;
+  width: 220px;
+  height: 60px;
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.form__input2, .form__input3 {
+  margin-left: 15px;
+}
+
+.form__button {
+  z-index: 1;
+  color: #fff;
+  cursor: pointer;
+  width: 360px;
+  height: 60px;
+  font-size: 16px;
+  font-family: var(--font-family);
+  z-index: 2;
+  background: #0aa9ff;
+  border: none;
+  border-radius: 11px;
+  margin-left: 79px;
+  font-size: 18px;
+  font-weight: 800;
+  position: relative;
+}
+
+.enrollment__wrapper {
+  position: relative;
+}
+
+.enrollment__star {
+  z-index: 1;
+  position: absolute;
+  top: -57px;
+  left: 930px;
+}
+
+.enrollment__rock {
+  position: absolute;
+  top: -15px;
+  left: 740px;
+}
+
+.about_hexlet {
+  z-index: 2;
+  background: #020202;
+  padding-top: 77px;
+  padding-bottom: 75px;
+  position: relative;
+}
+
+.about_hexlet__head {
+  display: flex;
+}
+
+.about_hexlet__head-title {
+  font-family: var(--font-family);
+  color: #fff;
+  width: 500px;
+  margin: 0;
+  padding-bottom: 24px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 106%;
+}
+
+.about_hexlet__head-details {
+  font-family: var(--font-family);
+  color: #fff;
+  width: 618px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about_hexlet__head-img {
+  border-radius: 20px;
+  max-width: 424px;
+  margin-left: 99px;
+}
+
+.about_hexlet__head-img img {
+  border-radius: 20px;
+  max-width: 424px;
+}
+
+.about_hexlet__advantages {
+  justify-content: space-between;
+  display: flex;
+}
+
+.about_hexlet__advantages-titles {
+  font-family: var(--font-family);
+  color: #92da63;
+  margin: 115px 0 19px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.about_hexlet__advantages-texts {
+  font-family: var(--font-family);
+  color: #fff;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.about_hexlet__advantages-flexibility .about_hexlet__advantages-texts {
+  max-width: 310px;
+  min-height: 139px;
+}
+
+.about_hexlet__advantages-relevance .about_hexlet__advantages-texts {
+  max-width: 348px;
+  min-height: 92px;
+}
+
+.about_hexlet__advantages-soft .about_hexlet__advantages-texts {
+  max-width: 295px;
+  min-height: 138px;
+}
+
+.transition {
+  background: #7f61dd;
+  padding-top: 33px;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.transition__wrapper {
+  display: flex;
+  position: relative;
+}
+
+.transition__content {
+  display: inline-block;
+}
+
+.transition__content-title {
+  font-family: var(--font-family);
+  color: #fff;
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.transition__content-text {
+  font-family: var(--font-family);
+  color: #fff;
+  width: 717px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.transition__btn {
+  width: 292px;
+  height: 50px;
+  font-family: var(--font-family);
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+  background: #a8eb66;
+  border-radius: 11px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 68px;
+  margin-left: 154px;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  display: flex;
+}
+
+.transition__backmark1 {
+  position: absolute;
+  top: -46px;
+  left: 1117px;
+}
+
+.transition__backmark2 {
+  position: absolute;
+  top: -46px;
+  left: 1211px;
+}
+
+.transition__backmark3 {
+  position: absolute;
+  top: -46px;
+  left: 1287px;
+}
+
+.transition__backmark4 {
+  position: absolute;
+  top: 10px;
+  left: 1116px;
+}
+
+.transition__backmark5 {
+  position: absolute;
+  top: -28px;
+  left: 1157px;
+}
+
+.transition__backmark6 {
+  position: absolute;
+  top: -31px;
+  left: 1235px;
+}
+
+.transition__backmark7 {
+  position: absolute;
+  top: 7px;
+  left: 1311px;
+}
+
+.transition__backmark8 {
+  position: absolute;
+  top: 11px;
+  left: 1198px;
+}
+
+.transition__backmark9 {
+  position: absolute;
+  top: 60px;
+  left: 1232px;
+}
+
+.transition__backmark10 {
+  position: absolute;
+  top: 40px;
+  left: 1280px;
+}
+
+.transition__backmark11 {
+  position: absolute;
+  top: 87px;
+  left: 1186px;
+}
+
+.transition__backmark12 {
+  position: absolute;
+  top: 90px;
+  left: 1260px;
+}
+
+.transition__backmark13 {
+  position: absolute;
+  top: 89px;
+  left: 1311px;
+}
+
+.transition__backmark14 {
+  position: absolute;
+  top: 112px;
+  left: 1117px;
+}
+
+.transition__backmark15 {
+  position: absolute;
+  top: 140px;
+  left: 1192px;
+}
+
+.transition__backmark15V2 {
+  position: absolute;
+  top: 130px;
+  left: 1070px;
+}
+
+.transition__backmark15V3 {
+  position: absolute;
+  top: 40px;
+  left: 1160px;
+  transform: rotateY(180deg);
+}
+
+.transition__backmark16 {
+  position: absolute;
+  top: 115px;
+  left: 1232px;
+}
+
+.transition__backmark17 {
+  position: absolute;
+  top: -46px;
+  left: 1337px;
+}
+
+.transition__backmark18 {
+  position: absolute;
+  top: -46px;
+  left: 1431px;
+}
+
+.transition__backmark19 {
+  position: absolute;
+  top: -46px;
+  left: 1507px;
+}
+
+.transition__backmark20 {
+  position: absolute;
+  top: 30px;
+  left: 1356px;
+}
+
+.transition__backmark21 {
+  position: absolute;
+  top: -20px;
+  left: 1380px;
+}
+
+.transition__backmark22 {
+  position: absolute;
+  top: -31px;
+  left: 1455px;
+}
+
+.transition__backmark23 {
+  position: absolute;
+  top: 7px;
+  left: 1530px;
+}
+
+.transition__backmark24 {
+  position: absolute;
+  top: 11px;
+  left: 1418px;
+}
+
+.transition__backmark25 {
+  position: absolute;
+  top: 60px;
+  left: 1452px;
+}
+
+.transition__backmark26 {
+  position: absolute;
+  top: 40px;
+  left: 1500px;
+}
+
+.transition__backmark27 {
+  position: absolute;
+  top: 60px;
+  left: 1390px;
+}
+
+.transition__backmark28 {
+  position: absolute;
+  top: 90px;
+  left: 1486px;
+}
+
+.transition__backmark29 {
+  position: absolute;
+  top: 89px;
+  left: 1530px;
+}
+
+.transition__backmark30 {
+  position: absolute;
+  top: 112px;
+  left: 1357px;
+}
+
+.transition__backmark31 {
+  position: absolute;
+  top: 130px;
+  left: 1412px;
+}
+
+.transition__backmark32 {
+  position: absolute;
+  top: 115px;
+  left: 1452px;
+}
+
+.text_underline--gray {
+  text-underline-offset: 2px;
+  text-decoration: underline #fffc;
+}
+
+.footer {
+  background-color: #000;
+  padding-top: 28px;
+  padding-bottom: 48px;
+}
+
+.footer__wrapper {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.footer__title {
+  font-family: var(--mulish-font);
+  color: #fff;
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.footer__link {
+  font-family: var(--mulish-font);
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all .3s linear;
+  display: block;
+}
+
+.footer__link:hover, .footer__phone:hover, .footer__copyright-political:hover {
+  color: #e44a77;
+}
+
+.footer__contacts {
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.footer__social {
+  column-gap: 12px;
+  display: flex;
+}
+
+.footer__social-link {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer__phone {
+  font-family: var(--mulish-font);
+  color: #fff;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: all .3s linear;
+}
+
+.footer__button {
+  width: 274px;
+  height: 55px;
+  font-family: var(--mulish-font);
+  color: #fff;
+  cursor: pointer;
+  background: #e44a77;
+  border: none;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 23px;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all .1s linear;
+  display: flex;
+}
+
+.footer__button:hover {
+  color: #e44a77;
+  background: #fff;
+  border: 1px solid #e44a77;
+}
+
+.footer__section-contacts .footer__title {
+  margin-bottom: 22px;
+}
+
+.footer__sections {
+  justify-content: space-between;
+  width: 475px;
+  display: flex;
+}
+
+.footer__copyright {
+  border-top: 1px solid #ffffff7a;
+  justify-content: space-between;
+  margin-top: 41px;
+  padding-top: 32px;
+  display: flex;
+}
+
+.footer__copyright-image {
+  width: 260px;
+}
+
+.copyright__main-text {
+  font-family: var(--mulish-font);
+  opacity: .8;
+  color: #fff;
+  width: 410px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.copyright__main-text a {
+  color: #fff;
+}
+
+.footer__copyright-political {
+  width: 274px;
+  font-family: var(--mulish-font);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-decoration: none;
+  transition: all .1s linear;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .presentation-card:hover .presentation-card__image {
+    margin-top: 30px;
+    transform: scale(1.2);
+  }
+
+  .presentation-card:hover:after {
+    background: #00000080;
+  }
+
+  .coursesall__block-button:hover {
+    color: #e44a77;
+  }
+
+  .footer__button:hover {
+    color: #e44a77;
+    background: #fff;
+    border: 1px solid #e44a77;
+  }
+
+  .footer__link:hover, .footer__phone:hover, .footer__copyright-political:hover {
+    color: #e44a77;
+  }
+
+  .courses__card-button a:hover {
+    color: #e44a77;
+    background: #fff;
+    border: 1px solid #e44a77;
+  }
+}
+
+@media screen and (width >= 660px) and (width <= 768px) {
+  .container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+
+  .coursesall__text {
+    padding: 5px 0;
+  }
+
+  .courseall__text-title {
+    display: none;
+  }
+
+  .courseall__title-mobile {
+    font-family: var(--font-family);
+    color: #7f61dd;
+    width: 409px;
+    padding-bottom: 14px;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 108%;
+  }
+
+  .courseall__text-p, .courseall__p-mobile {
+    display: none;
+  }
+
+  .courseall__p-planshet {
+    font-family: var(--font-family);
+    color: #000;
+    width: 537px;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+  }
+
+  .coursesall__img {
+    display: none;
+  }
+
+  .coursesall__block {
+    padding-top: 10px;
+  }
+
+  .coursesall__block-button {
+    width: 620px;
+    height: 114px;
+    font-family: var(--font-family);
+    color: #fff;
+    margin-top: 29px;
+    font-size: 43px;
+    font-weight: 800;
+  }
+
+  .block_section-courses {
+    width: 50px;
+    height: 50px;
+  }
+
+  .block1_section-courses {
+    transform-origin: center;
+    top: 130px;
+    left: -25px;
+    transform: rotateZ(225deg);
+  }
+
+  .block2_section-courses {
+    transform-origin: center;
+    bottom: 89px;
+    left: 595px;
+    transform: rotateZ(226deg);
+  }
+
+  .sitebuilding-title {
+    text-transform: uppercase;
+    width: 625px;
+    padding-bottom: 12px;
+    font-size: 40px;
+  }
+
+  .sitebuilding-text {
+    width: 599px;
+  }
+
+  .details_up, .details_down, .details_up-mobile, .details_down-mobile {
+    display: none;
+  }
+
+  .teachers-planshet, .grafic-planshet, .projects-planshet, .sertify-planshet {
+    gap: 16px;
+    display: flex;
+  }
+
+  .grafic-planshet, .projects-planshet, .sertify-planshet {
+    padding-top: 43px;
+  }
+
+  .sertify-planshet {
+    padding-bottom: 45px;
+  }
+
+  .teachers-planshet > span {
+    max-width: 555px;
+  }
+
+  .grafic-planshet {
+    max-width: 599px;
+  }
+
+  .projects-planshet {
+    max-width: 558px;
+  }
+
+  .sertify-planshet {
+    max-width: 549px;
+  }
+
+  .textmark-planshet {
+    font-family: var(--font-family);
+    color: #000;
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+  .consultation__images, .kodatzdes {
+    display: none;
+  }
+
+  .consultation__form > h2 {
+    font-size: 40px;
+  }
+
+  .consultation__form-solovey > input {
+    width: 100%;
+    font-family: var(--second-family);
+    color: #7f7f7f;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .consultation__form {
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 34px;
+  }
+
+  .consultation__form-solovey > button {
+    width: 100%;
+    min-height: 57px;
+  }
+
+  .enrollment__head-title {
+    font-family: var(--font-family);
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .enrollment__head-text {
+    font-family: var(--font-family);
+    color: #fff;
+    max-width: 620px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .enrollment__form > form > :nth-child(7) {
+    display: none;
+  }
+
+  .enrollment {
+    padding: 20px 0 0;
+  }
+
+  .form__input, .form__input3 {
+    width: 140px;
+    height: 49px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .form__input2 {
+    font-family: var(--font-family);
+    width: 140px;
+    height: 49px;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .form__button {
+    width: 160px;
+    height: 49px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    bottom: 50px;
+    left: 450px;
+  }
+
+  .enrollment__star {
+    width: 264px;
+    height: 235px;
+    top: 0;
+    left: 400px;
+  }
+
+  .enrollment__rock {
+    width: 113px;
+    height: 112px;
+    top: -35px;
+    left: -30px;
+  }
+}
+
+@media screen and (width >= 481px) and (width <= 659px) {
+  .container {
+    width: 95vw;
+    margin: 0 auto;
+  }
+
+  .visible-desktop {
+    display: none;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+
+  .coursesall__text {
+    padding: 5px 0;
+  }
+
+  .courseall__text-title {
+    display: none;
+  }
+
+  .courseall__title-mobile {
+    font-family: var(--font-family);
+    color: #7f61dd;
+    width: 409px;
+    padding-bottom: 14px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 108%;
+  }
+
+  .courseall__text-p, .courseall__p-mobile {
+    display: none;
+  }
+
+  .courseall__p-planshet {
+    font-family: var(--font-family);
+    color: #000;
+    width: 437px;
+    font-size: 20px;
+    font-weight: 400;
+    display: block;
+  }
+
+  .coursesall__img {
+    display: none;
+  }
+
+  .coursesall__block {
+    padding-top: 0;
+  }
+
+  .coursesall__block-button {
+    width: 460px;
+    height: 84px;
+    font-family: var(--font-family);
+    color: #fff;
+    margin-top: 20px;
+    font-size: 43px;
+    font-weight: 800;
+  }
+
+  .block_section-courses {
+    width: 50px;
+    height: 50px;
+  }
+
+  .block1_section-courses {
+    transform-origin: center;
+    top: 65px;
+    left: -25px;
+    transform: rotateZ(225deg);
+  }
+
+  .block2_section-courses {
+    transform-origin: center;
+    bottom: 60px;
+    left: 440px;
+    transform: rotateZ(226deg);
+  }
+
+  .sitebuilding {
+    padding-top: 50px;
+  }
+
+  .details_up, .details_down, .details_up-mobile, .details_down-mobile {
+    display: none;
+  }
+
+  .teachers-planshet, .grafic-planshet, .projects-planshet, .sertify-planshet {
+    gap: 16px;
+    display: flex;
+  }
+
+  .grafic-planshet, .projects-planshet, .sertify-planshet {
+    padding-top: 43px;
+  }
+
+  .sertify-planshet {
+    padding-bottom: 45px;
+  }
+
+  .teachers-planshet > span {
+    max-width: 555px;
+  }
+
+  .grafic-planshet {
+    max-width: 599px;
+  }
+
+  .projects-planshet {
+    max-width: 558px;
+  }
+
+  .sertify-planshet {
+    max-width: 549px;
+  }
+
+  .textmark-planshet {
+    font-family: var(--font-family);
+    color: #000;
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+  .consultation__images, .kodatzdes {
+    display: none;
+  }
+
+  .consultation__form > h2 {
+    font-size: 40px;
+  }
+
+  .consultation__form-solovey > input {
+    width: 100%;
+    font-family: var(--second-family);
+    color: #7f7f7f;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .consultation__form {
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 34px;
+  }
+
+  .consultation__form-solovey > button {
+    width: 100%;
+    min-height: 57px;
+  }
+
+  .enrollment__head-title {
+    font-family: var(--font-family);
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .enrollment__head-text {
+    font-family: var(--font-family);
+    color: #fff;
+    max-width: 620px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .enrollment__form > form > :nth-child(7) {
+    display: none;
+  }
+
+  .enrollment {
+    padding: 20px 0 0;
+  }
+
+  .form__input, .form__input3 {
+    width: 140px;
+    height: 49px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .form__input2 {
+    font-family: var(--font-family);
+    width: 140px;
+    height: 49px;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .form__button {
+    width: 160px;
+    height: 49px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    bottom: 50px;
+    left: 450px;
+  }
+
+  .enrollment__star {
+    width: 264px;
+    height: 235px;
+    top: 0;
+    left: 400px;
+  }
+
+  .enrollment__rock {
+    width: 113px;
+    height: 112px;
+    top: -35px;
+    left: -30px;
+  }
+}
+
+@media screen and (width >= 528px) and (width <= 649px) {
+  .consultation__images, .kodatzdes {
+    display: none;
+  }
+
+  .consultation__form > h2 {
+    font-size: 35px;
+  }
+
+  .consultation__form-solovey > input {
+    width: 100%;
+    font-family: var(--second-family);
+    color: #7f7f7f;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .consultation__form {
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 34px;
+  }
+
+  .consultation__form-solovey > button {
+    width: 100%;
+    min-height: 57px;
+  }
+
+  .enrollment__head-title {
+    font-family: var(--font-family);
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .enrollment__head-text {
+    font-family: var(--font-family);
+    color: #fff;
+    max-width: 620px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .enrollment__form > form > :nth-child(7) {
+    display: none;
+  }
+
+  .enrollment {
+    padding: 20px 0 0;
+  }
+
+  .form__input, .form__input3 {
+    width: 140px;
+    height: 49px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .form__input2 {
+    font-family: var(--font-family);
+    width: 140px;
+    height: 49px;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .form__button {
+    width: 140px;
+    height: 49px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    bottom: 50px;
+    right: 0;
+  }
+
+  .enrollment__star {
+    width: 264px;
+    height: 235px;
+    top: 0;
+    left: 400px;
+  }
+
+  .enrollment__rock {
+    width: 113px;
+    height: 112px;
+    top: -35px;
+    left: -30px;
+  }
+}
+
+@media screen and (width >= 500px) and (width <= 527px) {
+  .consultation__images, .kodatzdes {
+    display: none;
+  }
+
+  .consultation__form > h2 {
+    font-size: 32px;
+  }
+
+  .consultation__form-solovey > input {
+    width: 100%;
+    font-family: var(--second-family);
+    color: #7f7f7f;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .consultation__form {
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 34px;
+  }
+
+  .consultation__form-solovey > button {
+    width: 100%;
+    min-height: 57px;
+  }
+
+  .enrollment__head-title {
+    font-family: var(--font-family);
+    color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .enrollment__head-text {
+    font-family: var(--font-family);
+    color: #fff;
+    max-width: 620px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  .enrollment__form > form > :nth-child(7) {
+    display: none;
+  }
+
+  .enrollment {
+    padding: 20px 0 0;
+  }
+
+  .form__input, .form__input3 {
+    width: 140px;
+    height: 49px;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .form__input2 {
+    font-family: var(--font-family);
+    width: 140px;
+    height: 49px;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .form__button {
+    width: 140px;
+    height: 49px;
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    bottom: 0;
+    left: 175px;
+  }
+
+  .enrollment__star {
+    width: 264px;
+    height: 235px;
+    top: 0;
+    left: 400px;
+  }
+
+  .enrollment__rock {
+    width: 113px;
+    height: 112px;
+    top: -35px;
+    left: -30px;
+  }
+}
+
+@media screen and (width <= 480px) {
+  .container {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .visible-desktop {
+    display: none;
+  }
+
+  .visible-mobile {
+    display: block;
+  }
+
+  .courseall__text-title, .courseall__text-p, .coursesall__img, .courseall__p-planshet {
+    display: none;
+  }
+
+  .courses {
+    background-size: cover;
+    height: 256px;
+  }
+
+  .coursesall__text {
+    padding: 50px 0 0;
+  }
+
+  .courseall__title-mobile {
+    font-family: var(--font-family);
+    color: #7f61dd;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 90%;
+  }
+
+  .courseall__p-mobile {
+    font-family: var(--font-family);
+    color: #000;
+    width: 338px;
+    padding: 11px 0;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  .coursesall__block {
+    padding: 17px 0;
+  }
+
+  .coursesall__block-button {
+    color: #fff;
+    width: 336px;
+    height: 59px;
+    font-size: 23px;
+  }
+
+  .block_section-courses {
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+  }
+
+  .block1_section-courses {
+    transform-origin: center;
+    top: 61px;
+    left: -16px;
+    transform: rotateZ(225deg);
+  }
+
+  .block2_section-courses {
+    transform-origin: center;
+    bottom: 62px;
+    left: 322px;
+    transform: rotateZ(226deg);
+  }
+
+  .sitebuilding {
+    padding: 51px 0 0;
+  }
+
+  .sitebuilding-title {
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .sitebuilding-text {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .details_up, .details_down, .details-planshet {
+    display: none;
+  }
+
+  .alldetails {
+    padding-top: 22px;
+  }
+
+  .details_up-mobile {
+    align-items: center;
+    gap: 46px;
+    display: flex;
+  }
+
+  .details_down-mobile {
+    align-items: center;
+    gap: 33px;
+    padding-top: 18px;
+    display: flex;
+  }
+
+  .sertify-mobile, .grafic-mobile, .practic-mobile, .teachers-mobile {
+    align-items: center;
+    gap: 8px;
+    display: flex;
+  }
+
+  .textmark {
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .sertify__text {
+    color: #7f61dd;
+    width: 121px;
+  }
+
+  .grafic__text {
+    color: #92da63;
+    width: 95px;
+  }
+
+  .practic__text {
+    color: #0af;
+    width: 135px;
+  }
+
+  .teachers__text {
+    color: #e44a77;
+    width: 133px;
+  }
+
+  .consultation {
+    margin-top: 28px;
+  }
+
+  .consultation__form {
+    padding: 13px 0 20px;
+  }
+
+  .consultation__form > h2 {
+    font-size: 25.5px;
+  }
+
+  .consultation__form-solovey > input {
+    border-radius: 9px;
+    width: 100%;
+    height: 37px;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .consultation__form-solovey {
+    gap: 10px;
+  }
+
+  .consultation__form-solovey > button {
+    width: 100%;
+    height: 37px;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+
+  .privacy {
+    padding: 8px 0 0;
+    font-size: 8px;
+  }
+
+  .privacy-line {
+    text-underline-offset: 1.3px;
+  }
+
+  .demand-specialists, section.about_courses, .courses__header1 {
+    display: none;
+  }
+
+  .enrollment {
+    background: #e44a77;
+    padding: 12px 0 52px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .enrollment__wrapper {
+    padding: 0;
+  }
+
+  .enrollment__head-title {
+    margin-bottom: 4px;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 37.5px;
+  }
+
+  .enrollment__head-text {
+    max-width: 100%;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.5px;
+  }
+
+  .enrollment__form form {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    display: flex;
+  }
+
+  .enrollment__form {
+    margin-top: 18px;
+  }
+
+  .form__input, .form__input2, .form__input3, .form__button {
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .enrollment__form form button:not(.visible-mobile) {
+    display: none;
+  }
+
+  .enrollment__form form button.visible-mobile {
+    margin-top: 7px;
+    font-weight: 800;
+  }
+
+  .enrollment__rock {
+    width: 113px;
+    height: 112px;
+    top: -30px;
+    left: 0;
+  }
+
+  .about_hexlet {
+    padding: 18px 0 28px;
+  }
+
+  .about_hexlet__head-text > * {
+    width: 100%;
+    padding: 0;
+  }
+
+  .about_hexlet__head-title {
+    margin-bottom: 16px;
+    padding: 0;
+    font-size: 30px;
+    line-height: 37.5px;
+  }
+
+  .about_hexlet__head-details {
+    margin-bottom: 16px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.5px;
+  }
+
+  .about_hexlet__head-img, .about_hexlet__head-img img {
+    width: 100%;
+    max-width: 100%;
+    height: 276px;
+    margin: 0;
+  }
+
+  .about_hexlet__head {
+    margin-bottom: 36px;
+    display: block;
+  }
+
+  .about_hexlet__advantages {
+    flex-direction: column;
+    gap: 32px;
+    padding: 0;
+  }
+
+  .about_hexlet__advantages-titles {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+
+  .about_hexlet__advantages-soft {
+    display: block;
+  }
+
+  .about_hexlet__advantages-relevance, .about_hexlet__advantages-soft, .about_hexlet__advantages-flexibility {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about_hexlet__advantages-relevance > .about_hexlet__advantages-texts, .about_hexlet__advantages-soft > .about_hexlet__advantages-texts, .about_hexlet__advantages-flexibility > .about_hexlet__advantages-texts {
+    max-width: 100%;
+    min-height: max-content;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.5px;
+  }
+
+  .transition {
+    padding: 20px 0 40px;
+  }
+
+  .transition__wrapper {
+    display: block;
+  }
+
+  .transition__content-title {
+    margin-bottom: 4px;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .transition__content-text {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.5px;
+  }
+
+  .transition__btn {
+    width: 100%;
+    height: 50px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  .footer__sections > * {
+    width: 90%;
+  }
+
+  .details__teachers-about, .details__projects-about, .details__grafic-about, .demand-specialists__description {
+    width: 100%;
+  }
+
+  .footer__section-contacts, .copyright__main, .footer__copyright, .footer__copyright-political, .footer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.78cc32dd.css.map */

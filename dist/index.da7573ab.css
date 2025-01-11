@@ -1,0 +1,167 @@
+body.modal--opened {
+  width: 100vw;
+  position: sticky;
+  overflow: hidden;
+}
+
+.modal {
+  z-index: 1000;
+  opacity: 0;
+  background-color: #0006;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  transition: opacity .3s;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal__content {
+  opacity: 0;
+  background-color: #e44a77;
+  border-radius: 30px;
+  width: 30%;
+  max-width: 530px;
+  height: 460px;
+  padding: 32px 39px;
+  transition: all .3s;
+  position: relative;
+  transform: scale(.7);
+}
+
+.modal.modal--show {
+  opacity: 1;
+}
+
+.modal.modal--show .modal__content {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.modal__filling {
+  flex-direction: column;
+  row-gap: 24px;
+  display: flex;
+}
+
+.modal__header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  line-height: 48px;
+  display: flex;
+}
+
+.modal__header h2 {
+  font-family: var(--second-family);
+  color: #fff;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.filling__input-up {
+  width: 100%;
+  height: 50px;
+  font-size: 16px;
+  font-family: var(--font-family);
+  border: none;
+  border-radius: 12px;
+  padding-left: 24px;
+  font-weight: 600;
+}
+
+.filling__button {
+  color: #fff;
+  background-color: #00abf9;
+  border: none;
+  border-radius: 14px;
+  width: 100%;
+  min-height: 57px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 38px;
+}
+
+.modal__paragraph {
+  color: #fff;
+  font-family: var(--second-family);
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.modal__links {
+  color: #fff;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+@media only screen and (width >= 40.063em) and (width <= 64em) {
+  .modal__content {
+    border-radius: 20px;
+    width: 55%;
+    height: max-content;
+    padding: 20px;
+  }
+
+  .modal__header h2 {
+    font-size: 24px;
+  }
+
+  .filling__input-up {
+    height: 40px;
+    padding-left: 24px;
+  }
+
+  .filling__button {
+    border-radius: 12px;
+    min-height: 45px;
+  }
+
+  .modal__paragraph {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (width <= 40em) {
+  .modal__content {
+    border-radius: 20px;
+    width: 90%;
+    height: max-content;
+    padding: 20px;
+  }
+
+  .modal__header h2 {
+    font-size: 24px;
+  }
+
+  .filling__input-up {
+    height: 40px;
+    padding-left: 24px;
+  }
+
+  .filling__button {
+    border-radius: 12px;
+    min-height: 45px;
+  }
+
+  .modal__paragraph {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=index.da7573ab.css.map */

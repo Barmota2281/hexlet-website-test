@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.942335ab.css">
+    <link rel="stylesheet" href="/index.78cc32dd.css">
+    <link rel="stylesheet" href="/index.da7573ab.css">
+    <title>Хекслет IT колледжі-9 және 11 сыныптан кейін Қазақстанда бағдарламалауды оқыту</title>
+
+    <!-- ЛОГО САЙТА  -->
+    <link rel="icon" sizes="16x16" href="/logonav.e671e028.svg" type="image/svg+xml">
+    <link rel="icon" sizes="32x32" href="/logonav.e671e028.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logonav.e671e028.svg" type="image/svg+xml">
+    <!-- ЛОГО САЙТА  -->
+
+    <!-- ШРИФТЫ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bakbak+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bakbak+One&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bakbak+One&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- ШРИФТЫ -->
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="navbar__logotype">
+                    <div class="div_invisible"></div>
+                    <img src="/logonav.e671e028.svg" alt="logo_hexlet">
+                    <span>екслер колледжі</span>
+                </div>
+                <nav class="navbar__nav">
+                    <a href="">Біз кімбіз?</a>
+                    <a href="">Біз не ұсынамыз?</a>
+                    <a href="">Байланыс</a>
+                </nav>
+                <div class="navbar__language">
+                    <a class="RU" href="">RU</a>
+                    <a class="KZ" href="">KZ</a>
+                </div>
+                <div class="navbar__block">
+                    <button class="navbar__block-button modal__opener">
+                        Өтініш беру
+                    </button>
+                    <div class="block1_navbutton blocknav"></div>
+                    <div class="block2_navbutton blocknav"></div>
+                </div>
+
+                <!-- Адаптивная версия навбара -->
+                <div class="navbar__mobile-left-side">
+                    <div class="navbar__logotype">
+                        <img src="/logonav.e671e028.svg" alt="logo_hexlet">
+                        <span>екслер колледжі</span>
+                    </div>
+                    <div class="navbar__language">
+                        <a class="RU" href="">RU</a>
+                        <a class="KZ" href="">KZ</a>
+                    </div>
+                </div>
+                <div class="navbar__mobile-right-side">
+                    <button id="sidebar__open-button">
+                        <svg width="38" height="38" viewbox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.33334 11.0833C5.88473 11.0833 5.50895 10.9313 5.20601 10.6273C4.90306 10.3233 4.75106 9.94755 4.75001 9.5C4.74895 9.05244 4.90095 8.67666 5.20601 8.37266C5.51106 8.06866 5.88684 7.91666 6.33334 7.91666H31.6667C32.1153 7.91666 32.4916 8.06866 32.7956 8.37266C33.0996 8.67666 33.2511 9.05244 33.25 9.5C33.2489 9.94755 33.0969 10.3239 32.794 10.6289C32.4911 10.934 32.1153 11.0854 31.6667 11.0833H6.33334ZM6.33334 30.0833C5.88473 30.0833 5.50895 29.9313 5.20601 29.6273C4.90306 29.3233 4.75106 28.9476 4.75001 28.5C4.74895 28.0524 4.90095 27.6767 5.20601 27.3727C5.51106 27.0687 5.88684 26.9167 6.33334 26.9167H31.6667C32.1153 26.9167 32.4916 27.0687 32.7956 27.3727C33.0996 27.6767 33.2511 28.0524 33.25 28.5C33.2489 28.9476 33.0969 29.3239 32.794 29.6289C32.4911 29.934 32.1153 30.0854 31.6667 30.0833H6.33334ZM6.33334 20.5833C5.88473 20.5833 5.50895 20.4313 5.20601 20.1273C4.90306 19.8233 4.75106 19.4476 4.75001 19C4.74895 18.5524 4.90095 18.1767 5.20601 17.8727C5.51106 17.5687 5.88684 17.4167 6.33334 17.4167H31.6667C32.1153 17.4167 32.4916 17.5687 32.7956 17.8727C33.0996 18.1767 33.2511 18.5524 33.25 19C33.2489 19.4476 33.0969 19.8239 32.794 20.1289C32.4911 20.434 32.1153 20.5854 31.6667 20.5833H6.33334Z" fill="white"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Выходящие боковое меню -->
+                <div class="sidebar" id="sidebar">
+                    <div class="sidebar__menu">
+                        <div class="sidebar__header">
+                            <svg class="sidebar__close-button" width="24" height="24" viewbox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.5 35L0 31.5L14 17.5L0 3.5L3.5 0L17.5 14L31.5 0L35 3.5L21 17.5L35 31.5L31.5 35L17.5 21L3.5 35Z" fill="white"></path>
+                            </svg>
+                        </div>
+                        <div class="sidebar__nav">
+                            <a href="">Курстарға жазылу 2024</a>
+                            <a href="">Мамандығы</a>
+                            <a href="">Колледж туралы</a>
+                            <a href="">Байланыс</a>
+                        </div>
+                        <div class="sidebar__links">
+                            <div class="sidebar__social-links">
+                                <a href="https://www.tiktok.com/@hexly.kz" target="_blank">
+                                    <svg width="28" height="28" viewbox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="20" cy="20.5" r="20" fill="white"></circle>
+                                        <path d="M24.5286 8.5H20.451V24.8478C20.451 26.7956 18.8827 28.3957 16.931 28.3957C14.9794 28.3957 13.4111 26.7956 13.4111 24.8478C13.4111 22.9348 14.9445 21.3695 16.8265 21.3V17.1957C12.6792 17.2652 9.3335 20.6391 9.3335 24.8478C9.3335 29.0913 12.7489 32.5 16.9659 32.5C21.1828 32.5 24.5982 29.0565 24.5982 24.8478V16.4652C26.1317 17.5782 28.0136 18.2392 30.0002 18.2739V14.1695C26.9333 14.0652 24.5286 11.5609 24.5286 8.5Z" fill="#E44A77"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/hexly.kz?igsh=MWI2aGRoaTViYmc0ag==" target="_blank">
+                                    <svg width="28" height="28" viewbox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="19.5" cy="19.5" r="19.5" fill="white"></circle>
+                                        <path d="M19.5 7.79997C16.3237 7.79997 15.9261 7.81368 14.6784 7.86852C13.4353 7.92337 12.5806 8.12446 11.8402 8.41239C11.0678 8.71403 10.4143 9.11165 9.76528 9.7652C9.11173 10.4142 8.71411 11.0677 8.41247 11.8356C8.12454 12.5805 7.92345 13.4306 7.8686 14.6737C7.81376 15.926 7.80005 16.3236 7.80005 19.5C7.80005 22.6763 7.81376 23.0739 7.8686 24.3216C7.92345 25.5648 8.12454 26.4194 8.41247 27.1598C8.71411 27.9322 9.11173 28.5858 9.76528 29.2348C10.4143 29.8837 11.0678 30.2859 11.8356 30.583C12.5806 30.8709 13.4307 31.072 14.6738 31.1268C15.9215 31.1817 16.3191 31.1954 19.4955 31.1954C22.6719 31.1954 23.0695 31.1817 24.3172 31.1268C25.5603 31.072 26.4149 30.8709 27.1553 30.583C27.9231 30.2859 28.5767 29.8837 29.2257 29.2348C29.8746 28.5858 30.2769 27.9322 30.5739 27.1644C30.8619 26.4194 31.063 25.5693 31.1178 24.3262C31.1727 23.0785 31.1864 22.6809 31.1864 19.5046C31.1864 16.3282 31.1727 15.9305 31.1178 14.6829C31.063 13.4398 30.8619 12.5851 30.5739 11.8447C30.286 11.0677 29.8884 10.4142 29.2348 9.7652C28.5858 9.11622 27.9323 8.71403 27.1645 8.41696C26.4195 8.12903 25.5694 7.92794 24.3263 7.87309C23.0741 7.81368 22.6764 7.79997 19.5 7.79997Z" fill="#E44A77"></path>
+                                        <g clip-path="url(#clip0_159_389)">
+                                        <mask id="mask0_159_389" style="mask-type: luminance" maskunits="userSpaceOnUse" x="7" y="7" width="25" height="25">
+                                        <path d="M31.2 7.79999H7.80005V31.2H31.2V7.79999Z" fill="white"></path>
+                                        </mask>
+                                        <g mask="url(#mask0_159_389)">
+                                        <path d="M19.4999 13.4901C16.1819 13.4901 13.49 16.182 13.49 19.5C13.49 22.818 16.1819 25.5099 19.4999 25.5099C22.818 25.5099 25.5099 22.818 25.5099 19.5C25.5099 16.182 22.818 13.4901 19.4999 13.4901ZM19.4999 23.3985C17.3473 23.3985 15.6015 21.6526 15.6015 19.5C15.6015 17.3474 17.3473 15.6015 19.4999 15.6015C21.6525 15.6015 23.3984 17.3474 23.3984 19.5C23.3984 21.6526 21.6525 23.3985 19.4999 23.3985Z" fill="white"></path>
+                                        <path d="M27.1506 13.2523C27.1506 14.0293 26.52 14.6554 25.7476 14.6554C24.9706 14.6554 24.3445 14.0247 24.3445 13.2523C24.3445 12.4754 24.9752 11.8492 25.7476 11.8492C26.52 11.8492 27.1506 12.4799 27.1506 13.2523Z" fill="white"></path>
+                                        </g>
+                                        </g>
+                                        <defs>
+                                        <clippath id="clip0_159_389">
+                                        <rect width="23.4" height="23.4" fill="white" transform="translate(7.80005 7.79999)"></rect>
+                                        </clippath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <button class="modal__opener">Жазылғым келеді</button>
+                            <div class="sidebar__languages">
+                                <a href="">RU</a>
+                                <a href="">KZ</a>
+                            </div>
+                            <p>+7 775 007 03 77</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="courses">
+
+            <div class="container">
+
+                <div class="coursesall">
+
+                    <div class="coersesall__text-button">
+                        <div class="coursesall__text">
+                            <h1>Hexlet-колледжінің курстары</h1>
+                            <p>Бұл курстың басты артықшылығы-студенттер екі айдың ішінде сайт жасау негіздерін игере алады</p>
+                        </div>
+                        <div class="coursesall__block">
+                            <a href="#course_enrollment" class="coursesall__block-button">
+                                Жазылғым келеді
+                            </a>
+                            <div class="block1_section-courses block_section-courses"></div>
+                            <div class="block2_section-courses block_section-courses"></div>
+                        </div>
+                    </div>
+                    <div class="coursesall__img">
+                        <img src="/oneall_svg.127ad9ce.svg" alt="one_image">
+                        <img class="alert_img" src="/alert.46274e2c.svg" alt="alert_image">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="sitebuilding" id="site">
+
+            <div class="container">
+
+                <div class="sitebuilding__container">
+                    <h2 class="sitebuilding-title">БҰЛ НЕ <span class="sitebuild-word">САЙТ-ҚҰРЫЛЫСЫ</span>?</h2>
+                    <p class="sitebuilding-text"><span class="sitebuilding-word">Сайт-құрылысы</span> — бұл веб-сайттарды құру және дамыту процесі. Ол сайтты жоспарлау, жобалау, бағдарламалау, тестілеу және іске қосу сияқты бірнеше кезеңдерді қамтиды. Сайт құрылысында әртүрлі технологиялар мен бағдарламалау тілдері қолданылады.</p>
+                    <br><br>
+                    <p class="sitebuilding-text">Сонымен қатар, сайт құру іздеу жүйесін оңтайландыру (SEO), ыңғайлылық, мазмұнды басқару және сайтты қолдау аспектілерін қамтуы мүмкін. Сайт құрудың негізгі мақсаты-пайдаланушылар мен бизнестің қажеттіліктерін қанағаттандыратын Функционалды және тартымды сайт құру.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="alldetails">
+
+            <div class="container">
+
+                <div class="details_up">
+                    <div class="details__teachers">
+                        <img src="/redmark.22f733f7.svg" alt="redmark">
+                        <span class="details__teachers-about"><span class="red__teacher-word">Кәсіби тәлімгерлер</span>: Біздің <br> оқытушылар-IT-де көп жылдық <br> тәжірибесі бар және практикалық білімнің жоғары деңгейі <br> бар сарапшылар.</span>
+                    </div>
+                    <div class="details__projects">
+                        <img src="/bluemark.4b958c3a.svg" alt="bluemark">
+                        <span class="details__projects-about"><span class="blue__project-word">Тәжірибе және жобалар</span>: Курстар практикалық тапсырмаларға негізделген, ал түлектер портфолионың негізі бола алатын өз жобаларын жасайды.</span>
+                    </div>
+                </div>
+                <div class="details_down">
+                    <div class="details__grafic">
+                        <img src="/greenmark.af2c1dff.svg" alt="greenmark">
+                        <span class="details__grafic-about"><span class="green__grafic-word">Икемді кесте</span>: Сізге ыңғайлы оқу уақытын таңдаңыз және үйден шықпай-ақ онлайн форматта оқыңыз.</span>
+                    </div>
+                    <div class="details__sertify">
+                        <img src="/purplemark.7dbb4b7c.svg" alt="purplemark">
+                        <span class="details__sertify-about"><span class="purple__sertify-word">Курсты аяқтау туралы Сертификат</span>: Біліміңізді растаңыз және оны түйіндемеңізге қосыңыз.</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <section class="consultation" id="course_enrollment">
+
+            <div class="container">
+
+                <div class="consultation_">
+
+                    <div class="consultation__form">
+                        <h2>Тегін кеңес беру</h2>
+                        <form class="consultation__form-solovey" action="/submit" method="post">
+                            <label for="name_"></label>
+                            <input type="text" id="name_" name="name" required="" placeholder="Аты">
+
+                            <label for="phone_"></label>
+                            <input type="tel" id="phone_" name="phone" pattern="^[0-9]+$" required="" placeholder="+7 (***) *** ** **">
+
+                            <label for="email_"></label>
+                            <input type="email" id="email_" name="email" required="" placeholder="E-mail">
+
+                            <button type="submit">Кеңес алыңыз</button>
+                        </form>
+                        <span class="privacy">Түймені басу арқылы сіз дербес деректерді өңдеуге келісім бересіз <br> және келісесіз <a href="https://hexly.kz/privacy" class="privacy-line">дербес деректерді өңдеу саясаты.</a></span>
+                    </div>
+
+                    <div class="consultation__images">
+                        <img src="/aigerim.334de011.svg" alt="aigerim">
+                        <img class="designmoment" src="/designermoment.83341638.svg" alt="designer moment">
+                        <span>"Сәлеметсіз бе! Мен-Әйгерім. Мен сіздің барлық сұрақтарыңызға жауап беремін!"</span>
+                        <img class="checkmark checkone" src="/checkmark1.10042339.svg" alt="checkmark">
+                        <img class="checkmark checktwo" src="/checkmark2.ca9b5407.svg" alt="checkmark">
+                        <img class="checkmark checkthree" src="/checkmark3.ff61e9e6.svg" alt="checkmark">
+                        <img class="checkmark checkfour" src="/checkmark4.ffdb1042.svg" alt="checkmark">
+                        <img class="checkmark checkfive" src="/checkmark5.e046ecca.svg" alt="checkmark">
+                        <img class="checkmark checksix" src="/checkmark6.7cb6771a.svg" alt="checkmark">
+                        <img class="checkmark checkseven" src="/checkmark7.99c658a5.svg" alt="checkmark">
+                        <img class="checkmark checkacht" src="/checkmark8.338bfb0d.svg" alt="checkmark">
+                        <img class="checkmark checknein" src="/checkmark9.5a2ca06d.svg" alt="checkmark">
+                        <img class="checkmark checkten" src="/checkmark2.ca9b5407.svg" alt="checkmark">
+                        <img class="checkmark checkoneone" src="/checkmark11.cada9696.svg" alt="checkmark">
+                        <img class="checkmark checkonetwo" src="/checkmark12.20b9888e.svg" alt="checkmark">
+                        <img class="checkmark checkonethree" src="/checkmark13.b0e97fb1.svg" alt="checkmark">
+                        <img class="checkmark checkonefour" src="/checkmark14.45a6f596.svg" alt="checkmark">
+                    </div>
+                    <img class="kodatzdes" src="/kodatzdes.ed1a5fa1.svg" alt="img">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="demand-specialists">
+
+            <div class="container">
+
+                <div class="demand-specialists__about">
+                    <h2 class="demand-specialists__title">Біз сұранысқа ие <br> IT мамандарын үйретеміз</h2>
+                    <p class="demand-specialists__description">Біздің курстарымызбен түлектер it-де табысты мансапқа дайын бәсекеге қабілетті мамандарға айналады.</p>
+                </div>
+                <div class="presentation-cards">
+                    <div class="presentation-card">
+                        <img class="presentation-card__image" src="/presentation-card__site.c069f5d2.jpg" alt="">
+                        <div class="presentation-card__content">
+                            <div class="presentation-card__conditions">
+                                <div class="presentation-card__age">
+                                    <p>12-16 жас</p>
+                                </div>
+                                <div class="presentation-card__time">
+                                    <p>1-2 ай</p>
+                                </div>
+                            </div>
+                            <h2 class="presentation-card__title">Сайт-құрылысы курсы</h2>
+                            <div class="presentation-card__languages">
+                                <div class="presentation-card__html">
+                                    <span>HTML</span>
+                                </div>
+                                <div class="presentation-card__css">
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                            <p class="presentation-card__about">Белгілеу тілінде және каскадты стиль кестелерінде сайттар құру.</p>
+                        </div>
+                    </div>
+                    <div class="presentation-card">
+                        <img class="presentation-card__image" src="/presentation-card__programming.2fec8890.jpg" alt="">
+                        <div class="presentation-card__content">
+                            <div class="presentation-card__conditions">
+                                <div class="presentation-card__age">
+                                    <p>12-16 жас</p>
+                                </div>
+                                <div class="presentation-card__time">
+                                    <p>2 ай</p>
+                                </div>
+                            </div>
+                            <h2 class="presentation-card__title">Классикалық бағдарламалау курсы</h2>
+                            <div class="presentation-card__languages">
+                                <div class="presentation-card__c">
+                                    <span>C++</span>
+                                </div>
+                            </div>
+                            <p class="presentation-card__about">Бағдарламалау негіздері және C++ бағдарламалау тілінің синтаксисі, негізгі алгоритмдерді шешу</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="courses__header1">
+            <h2 class="text_extrabold">Курстар туралы</h2>
+        </div>
+        <section class="about_courses">
+
+            <div class="container">
+
+                <div class="courses__header">
+                    <h2 class="text_extrabold">Курстар туралы</h2>
+                </div>
+                <div class="courses__list">
+                    <div class="courses__card courses__card_left">
+                        <div class="courses__card-header">
+                            <h3 class="text_purple text_extrabold">Сайт-құрылысы</h3>
+                        </div>
+                        <div class="courses__card-description">
+                            <p>Жас санаты: 12-16 жас</p>
+                            <p>Оқу ұзақтығы 1-2 ай</p>
+                            <p>Колледжде күндізгі оқу</p>
+                            <p>Сыныптастарымен және оқытушыларымен тікелей байланыс және қауымдастық</p>
+                            <p>Нөлден бастап сайттар құру</p>
+                        </div>
+                        <div class="courses__card-price">
+                            <h3 class="text_pink text_extrabold">от 50 000 ₸ / ай</h3>
+                        </div>
+                        <div class="courses__card-button">
+                            <a href="/details.html" class="text_extrabold">Басқа курстар туралы толығырақ</a>
+                        </div>
+                    </div>
+                    <div class="courses__card courses__card_right">
+                        <div class="courses__card-header text_extrabold">
+                            <h3 class="text_purple text_extrabold">Классикалық бағдарламалау</h3>
+                        </div>
+                        <div class="courses__card-description">
+                            <p>Жас санаты: 12-16 жас және одан жоғары</p>
+                            <p>Оқу ұзақтығы 2 ай</p>
+                            <p>Колледжде күндізгі оқу</p>
+                            <p>Сыныптастарымен және оқытушыларымен тікелей байланыс және қауымдастық</p>
+                            <p>C++ бағдарламалау тілінің көмегімен веб-сайттар жасау</p>
+                        </div>
+                        <div class="courses__card-price">
+                            <h3 class="text_pink text_extrabold">от 50 000 ₸ / ай</h3>
+                        </div>
+                        <div class="courses__card-button">
+                            <a href="/details.html" class="text_extrabold">Курс туралы толығырақ</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="enrollment">
+
+            <div class="container">
+
+                <div class="enrollment__wrapper">
+                    <div class="enrollment__head">
+                        <h3 class="enrollment__head-title">
+                            Егер сізде сұрақтар болса
+                        </h3>
+                        <p class="enrollment__head-text">Немесе сіз бағыт таңдауда қиналсаңыз – өтінім қалдырыңыз. Біз сізге қоңырау шалып, барлық сұрақтарыңызға жауап береміз</p>
+
+                    </div>
+                    <div class="enrollment__form">
+                        <form action="/submit" method="post">
+                            <label for="name1"></label>
+                            <input class="form__input" id="name1" type="text" required="" placeholder="Аты">
+                            <label for="tel1"></label>
+                            <input class="form__input2" id="tel1" type="tel" pattern="^[0-9]+$" required="" placeholder="8-777-77-77">
+                            <label for="email1"></label>
+                            <input class="form__input3" id="email1" type="email" placeholder="E-mail">
+                            <button type="submit" class="form__button">«Кеңес алу»</button>
+                        </form>
+                    </div>
+
+                    <svg class="enrollment__star" width="426" height="391" viewbox="0 0 426 391" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_60_21)">
+                            <g opacity="0.1">
+                                <path d="M394.115 90.7739H295.215L264.641 0H161.394L130.819 90.7739H31.9198L0 185.543L79.9892 241.653L49.4154 332.427L132.959 391L212.983 334.924L293.006 391L376.549 332.427L345.977 241.653L426 185.543L394.115 90.7739ZM294.284 225.403L324.858 316.177L293.042 338.488L213.017 282.412L132.993 338.488L101.177 316.177L131.751 225.403L51.7619 169.294L63.9088 133.197H162.808L193.382 42.4233H232.687L263.261 133.197H362.16L374.307 169.26L294.284 225.403Z" fill="white"></path>
+                            </g>
+                        </g>
+                        <defs>
+                            <clippath id="clip0_60_21">
+                                <rect width="426" height="391" fill="white"></rect>
+                            </clippath>
+                        </defs>
+                    </svg>
+                    <svg class="enrollment__rock" width="150" height="150" viewbox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.2">
+                            <path d="M109.709 42.9904L98.9217 0L62.4275 10.4426L71.253 45.6155L63.0063 47.9752L50.0418 51.6849L41.7951 54.0446L35.8944 30.5267L0 40.7977L18.7754 115.626L55.5398 150L104.287 136.051L150 44.5977L127.435 28.1568L109.709 42.9904ZM66.494 61.9183L74.7405 59.5586L81.2641 85.5584L73.0176 87.9181L66.494 61.9183ZM53.5293 65.628L58.2259 84.3462L49.9794 86.7058L45.2828 67.9877L53.5293 65.628ZM95.1967 123.711L58.316 134.265L30.5118 107.065L16.4523 51.0309L26.4071 48.1825L28.8102 57.7603L38.7548 97.3941L40.505 104.37L61.7162 98.3002L63.5433 105.582L97.7294 95.7998L95.9791 88.8243L78.8826 20.6869L89.4476 17.6638L101.804 66.9082L127.7 45.764L132.435 49.2137L95.1967 123.711Z" fill="white"></path>
+                        </g>
+                    </svg>
+                </div>
+
+            </div>
+
+        </section>
+        <section class="about_hexlet">
+
+            <div class="container">
+
+                <div class="about_hexlet__head">
+                    <div class="about_hexlet__head-text">
+                        <h3 class="about_hexlet__head-title">
+                            Hexlet колледжі туралы Қазақстанда
+                        </h3>
+                        <p class="about_hexlet__head-details">Хекслет колледжі — бұл Хекслет аттас ресейлік колледждің бірлескен жобасы. Біз мыңдаған студенттерді оқытып, жұмысқа орналастырдық, <br> сондықтан нәтижелі және көңілді оқыту қалай болуы керек екенін білеміз. Біздің мақсатымыз — түлектердің жоғары жалақысы бар сұранысқа ие жұмысты табуына көмектесу. Хекслеттегі оқу <br> колледжде дәл солай.</p>
+                    </div>
+
+                    <div class="about_hexlet__head-img">
+                        <img src="/hexletcollege.11806187.jpeg" alt="students">
+                    </div>
+                </div>
+
+                <div class="about_hexlet__advantages">
+                    <div class="about_hexlet__advantages-flexibility">
+                        <h4 class="about_hexlet__advantages-titles">Оқытудың икемділігі</h4>
+                        <p class="about_hexlet__advantages-texts">Сіз өзіңізге ыңғайлы уақытта және өз темпіңізде оқи аласыз. Көптеген онлайн-курстар бейнесабақтарды жазып береді, бұл студенттерге материалдарды қайта қарап, қалағанынша тәжірибе жинауға мүмкіндік береді.</p>
+                    </div>
+
+                    <div class="about_hexlet__advantages-relevance">
+                        <h4 class="about_hexlet__advantages-titles">Білімнің өзектілігі</h4>
+                        <p class="about_hexlet__advantages-texts">Технологиялар тез дамып келеді. Ақпараттық технологиялар саласындағы білім ең жаңа технологиялар мен трендтерден хабардар болуға көмектеседі.</p>
+                    </div>
+
+                    <div class="about_hexlet__advantages-soft">
+                        <h4 class="about_hexlet__advantages-titles">Soft skills</h4>
+                        <p class="about_hexlet__advantages-texts">IT-курстарында тек техникалық дағдылар ғана емес, сонымен қатар жұмсақ дағдылар да дамиды (мысалы, командада жұмыс істей білу, тиімді коммуникация, мәселелерді шешу және сыни ойлау).</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="transition">
+
+            <div class="container">
+
+                <div class="transition__wrapper">
+                    <div class="transition__content">
+                        <h2 class="transition__content-title">Hexlet-колледжі</h2>
+                        <p class="transition__content-text">Егер біздің білім беру бағдарламаларымыз, оқытушыларымыз және қолжетімді курстарымыз туралы толығырақ білгіңіз келсе, Hexlet негізгі сайтына өтіңіз. Онда сіз IT саласындағы жолыңызды бастау үшін қажетті барлық ақпаратты таба аласыз!</p>
+                    </div>
+                    <a href="https://hexly.kz/" class="transition__btn">Өту</a>
+                    <img class="transition__backmark1" src="/backmark1.49fa6ccc.svg" alt="Image 1">
+                    <img class="transition__backmark2" src="/backmark2.46b154de.svg" alt="Image 2">
+                    <img class="transition__backmark3" src="/backmark3.f29f54b0.svg" alt="Image 3">
+                    <img class="transition__backmark4" src="/backmark4.2c50f5ff.svg" alt="Image 4">
+                    <img class="transition__backmark5" src="/backmark5.de26b134.svg" alt="Image 5">
+                    <img class="transition__backmark6" src="/backmark6.7b722228.svg" alt="Image 6">
+                    <img class="transition__backmark7" src="/backmark7.ff9a2822.svg" alt="Image 7">
+                    <img class="transition__backmark8" src="/backmark8.c1848039.svg" alt="Image 8">
+                    <img class="transition__backmark9" src="/backmark9.a6db4629.svg" alt="Image 9">
+                    <img class="transition__backmark10" src="/backmark10.77434221.svg" alt="Image 10">
+                    <img class="transition__backmark11" src="/backmark11.9d8c9814.svg" alt="Image 11">
+                    <img class="transition__backmark12" src="/backmark12.3a509c00.svg" alt="Image 12">
+                    <img class="transition__backmark13" src="/backmark13.6995b873.svg" alt="Image 13">
+                    <img class="transition__backmark14" src="/backmark14.010966d7.svg" alt="Image 14">
+                    <img class="transition__backmark15" src="/backmark15.4463632e.svg" alt="Image 15">
+                    <img class="transition__backmark16" src="/backmark16.792b3f93.svg" alt="Image 16">
+                    <img class="transition__backmark17" src="/backmark1.49fa6ccc.svg" alt="Image 17">
+                    <img class="transition__backmark18" src="/backmark2.46b154de.svg" alt="Image 18">
+                    <img class="transition__backmark19" src="/backmark3.f29f54b0.svg" alt="Image 19">
+                    <img class="transition__backmark20" src="/backmark4.2c50f5ff.svg" alt="Image 20">
+                    <img class="transition__backmark21" src="/backmark5.de26b134.svg" alt="Image 21">
+                    <img class="transition__backmark22" src="/backmark6.7b722228.svg" alt="Image 22">
+                    <img class="transition__backmark23" src="/backmark7.ff9a2822.svg" alt="Image 23">
+                    <img class="transition__backmark24" src="/backmark8.c1848039.svg" alt="Image 24">
+                    <img class="transition__backmark25" src="/backmark9.a6db4629.svg" alt="Image 25">
+                    <img class="transition__backmark26" src="/backmark10.77434221.svg" alt="Image 26">
+                    <img class="transition__backmark27" src="/backmark11.9d8c9814.svg" alt="Image 27">
+                    <img class="transition__backmark28" src="/backmark12.3a509c00.svg" alt="Image 28">
+                    <img class="transition__backmark29" src="/backmark13.6995b873.svg" alt="Image 29">
+                    <img class="transition__backmark30" src="/backmark14.010966d7.svg" alt="Image 30">
+                    <img class="transition__backmark31" src="/backmark15.4463632e.svg" alt="Image 31">
+                    <img class="transition__backmark32" src="/backmark16.792b3f93.svg" alt="Image 32">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer__wrapper">
+                <div class="footer__sections">
+                    <div class="footer__section footer__section-admission">
+                        <h3 class="footer__title">Қабылдау 2024</h3>
+                        <a href="#" class="footer__link">Курстар</a>
+                        <a href="#" class="footer__link">Курстарға жазылу</a>
+                        <a href="#" class="footer__link">Қабылдау процесі</a>
+                        <a href="#" class="footer__link">Оқыту қалай өтеді</a>
+                    </div>
+                    <div class="footer__section footer__section-about">
+                        <h3 class="footer__title">Біз туралы</h3>
+                        <a href="#" class="footer__link">Блог</a>
+                        <a href="#" class="footer__link">Хекслет колледжі туралы</a>
+                        <a href="#" class="footer__link">Ұйым туралы мәліметтер</a>
+                        <a href="#" class="footer__link">Команда</a>
+                    </div>
+                </div>
+                <div class="footer__section footer__section-contacts">
+                    <h3 class="footer__title">Байланыс</h3>
+                    <div class="footer__contacts">
+                        <div class="footer__social">
+                            <a href="https://www.instagram.com/hexly.kz?igsh=N3BnNXlpa2tkODlx" class="footer__social-link"><svg width="36" height="36" viewbox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_67_234)">
+                                        <mask id="mask0_67_234" style="mask-type: luminance" maskunits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+                                            <path d="M36 0H0V36H36V0Z" fill="white"></path>
+                                        </mask>
+                                        <g mask="url(#mask0_67_234)">
+                                            <path d="M18 3.2414C22.8094 3.2414 23.3789 3.2625 25.2704 3.34688C27.0281 3.42422 27.9773 3.71953 28.6102 3.96562C29.4469 4.28906 30.0516 4.68281 30.6773 5.30859C31.3102 5.94141 31.6969 6.53906 32.0204 7.37578C32.2664 8.00858 32.5617 8.96483 32.6391 10.7156C32.7235 12.614 32.7446 13.1836 32.7446 17.986C32.7446 22.7954 32.7235 23.3648 32.6391 25.2562C32.5617 27.0141 32.2664 27.9633 32.0204 28.5961C31.6969 29.4329 31.3031 30.0375 30.6773 30.6633C30.0446 31.2961 29.4469 31.6828 28.6102 32.0062C27.9773 32.2523 27.0211 32.5477 25.2704 32.625C23.3719 32.7094 22.8023 32.7304 18 32.7304C13.1906 32.7304 12.6211 32.7094 10.7297 32.625C8.97188 32.5477 8.02268 32.2523 7.38985 32.0062C6.55313 31.6828 5.94844 31.2891 5.32266 30.6633C4.68985 30.0304 4.30313 29.4329 3.97969 28.5961C3.7336 27.9633 3.43829 27.007 3.36094 25.2562C3.27656 23.3578 3.25547 22.7883 3.25547 17.986C3.25547 13.1766 3.27656 12.607 3.36094 10.7156C3.43829 8.95778 3.7336 8.00858 3.97969 7.37578C4.30313 6.53906 4.69688 5.93438 5.32266 5.30859C5.95547 4.67579 6.55313 4.28906 7.38985 3.96562C8.02268 3.71953 8.97893 3.42422 10.7297 3.34688C12.6211 3.2625 13.1906 3.2414 18 3.2414ZM18 0C13.1133 0 12.5016 0.0210938 10.5821 0.105469C8.66955 0.189844 7.35469 0.499219 6.21563 0.942188C5.02734 1.40625 4.02188 2.01796 3.02344 3.02344C2.01797 4.02187 1.40625 5.02735 0.942188 6.2086C0.499219 7.35469 0.189844 8.6625 0.105469 10.575C0.0210938 12.5015 0 13.1133 0 18C0 22.8867 0.0210938 23.4984 0.105469 25.4179C0.189844 27.3304 0.499219 28.6454 0.942188 29.7844C1.40625 30.9727 2.01797 31.9781 3.02344 32.9766C4.02188 33.975 5.02735 34.5938 6.2086 35.0508C7.35469 35.4938 8.6625 35.8031 10.575 35.8875C12.4946 35.9719 13.1063 35.993 17.993 35.993C22.8797 35.993 23.4914 35.9719 25.411 35.8875C27.3235 35.8031 28.6383 35.4938 29.7773 35.0508C30.9586 34.5938 31.9641 33.975 32.9625 32.9766C33.9609 31.9781 34.5797 30.9727 35.0367 29.7914C35.4797 28.6454 35.7891 27.3375 35.8735 25.425C35.9579 23.5055 35.9789 22.8937 35.9789 18.007C35.9789 13.1203 35.9579 12.5086 35.8735 10.5891C35.7891 8.6766 35.4797 7.36172 35.0367 6.22266C34.5938 5.02734 33.9821 4.02187 32.9766 3.02344C31.9781 2.025 30.9727 1.40625 29.7914 0.949215C28.6454 0.50625 27.3375 0.196875 25.425 0.1125C23.4985 0.0210938 22.8867 0 18 0Z" fill="white"></path>
+                                            <path d="M18 8.75391C12.8953 8.75391 8.75391 12.8953 8.75391 18C8.75391 23.1046 12.8953 27.2461 18 27.2461C23.1046 27.2461 27.2461 23.1046 27.2461 18C27.2461 12.8953 23.1046 8.75391 18 8.75391ZM18 23.9977C14.6883 23.9977 12.0023 21.3117 12.0023 18C12.0023 14.6883 14.6883 12.0023 18 12.0023C21.3117 12.0023 23.9977 14.6883 23.9977 18C23.9977 21.3117 21.3117 23.9977 18 23.9977Z" fill="white"></path>
+                                            <path d="M29.7703 8.3881C29.7703 9.58338 28.8 10.5467 27.6117 10.5467C26.4164 10.5467 25.4531 9.57641 25.4531 8.3881C25.4531 7.19278 26.4235 6.22949 27.6117 6.22949C28.8 6.22949 29.7703 7.1998 29.7703 8.3881Z" fill="white"></path>
+                                        </g>
+                                    </g>
+                                    <defs>
+                                        <clippath id="clip0_67_234">
+                                            <rect width="36" height="36" fill="white"></rect>
+                                        </clippath>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@hexly.kz?_r=1&_d=e5hmig31kg1c20&sec_uid=MS4wLjABAAAA8NoIN6IIbx7QQjNyrZXD_LoEXed7jkHSVDvp6r_77EvNPrm0Yjlv6LM2H9GlkFhp&share_author_id=7223797960941044762&sharer_language=ru&source=h5_m&u_code=dg55663ic5m169&timestamp=1734265333&user_id=6908089167171945473&sec_user_id=MS4wLjABAAAAneuI-brGYWXoGIDjVnxJ1hsvR_DryEFlcvxK2IW-RoxUg6Ukb45Sg8ad3jkwGw8f&utm_source=telegram&utm_campaign=client_share&utm_medium=android&share_iid=7447331012260218630&share_link_id=e2c69b9d-d333-4032-a963-ed18dca236a8&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b6880%2Cb5836&social_share_type=5&enable_checksum=1" class="footer__social-link"><svg width="31" height="36" viewbox="0 0 31 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.7926 0H16.6762V24.5217C16.6762 27.4435 14.3238 29.8435 11.3963 29.8435C8.46882 29.8435 6.11638 27.4435 6.11638 24.5217C6.11638 21.6522 8.4165 19.3043 11.2395 19.2V13.0435C5.01852 13.1478 0 18.2087 0 24.5217C0 30.887 5.12309 36 11.4486 36C17.774 36 22.8971 30.8348 22.8971 24.5217V11.9478C25.1973 13.6174 28.0202 14.6087 31 14.6609V8.50432C26.3997 8.3478 22.7926 4.5913 22.7926 0Z" fill="white"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="footer__phone">+77750070377</div>
+                        <button class="modal__opener footer__button">Өтініш беру</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО -->
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__sign-up">Записаться</h2>
+                <svg class="close-button" width="35" height="35" viewbox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.5 35L0 31.5L14 17.5L0 3.5L3.5 0L17.5 14L31.5 0L35 3.5L21 17.5L35 31.5L31.5 35L17.5 21L3.5 35Z" fill="white"></path>
+                </svg>
+            </div>
+            <form class="modal__filling" action="/submit" method="POST">
+                <label for="name">
+                    <input type="text" id="name" name="name" class="filling__input-up" required="" placeholder="Имя">
+                </label>
+                <label for="phone">
+                    <input type="tel" id="phone" name="phone" class="filling__input-up" pattern="^[0-9]+$" required="" placeholder="8-777-77-77">
+                </label>
+                <label for="email">
+                    <input type="email" id="email" name="email" class="filling__input-up" required="" placeholder="E-mail">
+                </label>
+                <button class="filling__button" type="submit">Записаться</button>
+            </form>
+            <div class="modal__paragraph">
+                <p>Нажимая на кнопку, вы даёте согласие на обработку персональных данных и соглашаетесь с <a class="modal__links" href="https://hexly.kz/privacy">политикой обработки персональных данных.</a> </p>
+            </div>
+        </div>
+      </div>
+
+      <script src="/index.c4775257.js"></script>
+<script src="/index_kz.3aa18de0.js"></script></body>
+</html>
